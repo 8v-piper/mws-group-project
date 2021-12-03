@@ -1,0 +1,17 @@
+.course-card {
+  max-width: 400px;
+}
+
+.course-header-logo-image img{
+  /* background-image: ; */
+  /* background-size: cover; */
+  max-width: 3rem;
+  object-fit: contain;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading {
+  margin-left: 1rem;
+}

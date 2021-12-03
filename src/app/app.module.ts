@@ -6,10 +6,12 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './shared/material.module';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,

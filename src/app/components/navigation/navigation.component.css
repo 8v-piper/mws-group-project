@@ -1,0 +1,20 @@
+* {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.navigation-items {
+  list-style: none;
+}
+
+.navigation-items a:hover {
+  color: aqua;
+}
+
+mat-icon {
+  transform: scale(1.4);
+}
+
+.search-bar {
+  align-items: center;
+}

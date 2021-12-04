@@ -1,1 +1,16 @@
-<app-card></app-card>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation">
+      <!--this is a place for us to add side-nav code-->
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <main>
+      <app-navigation (sidenavToggle)="sidenav.toggle()"></app-navigation>
+      <app-card></app-card>
+        <!--in here all the content must reside. We will add a navigation header as well-->
+      </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+

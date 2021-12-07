@@ -35,6 +35,18 @@ z-index: -1;
   height: 2rem;
 }
 
+.heading-main {
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.heading-sub {
+  max-width: 12em;
+}
+
+.hero-image img {
+  max-width: 30em;
+}
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
   .clip-path {
     right: 15em;

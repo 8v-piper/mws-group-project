@@ -10,6 +10,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatRippleModule} from '@angular/material/core';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     FlexLayoutModule,
     MatInputModule,
     MatAutocompleteModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatRippleModule
   ]
 })
 export class MaterialModule { }

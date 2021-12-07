@@ -1,6 +1,6 @@
 
-<mat-toolbar color="primary">
-  <div>
+<mat-toolbar >
+  <div class="logo-container">
     <a routerLink="/home">Site-Logo</a>
   </div>
   <div fxHide.gt-xs fxFlex fxLayout fxLayoutAlign="end">
@@ -8,14 +8,14 @@
           <mat-icon>menu</mat-icon>
       </button>
   </div>
-    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+    <div class="navigation-container" fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
       <app-search-bar fxLayout fxLayoutGap="15px" class= "search-bar"></app-search-bar>
       <ul fxLayout fxLayoutGap="15px" class="navigation-items">
           <li>
-              <a routerLink="">Menu 1</a>
+              <a routerLink="">Courses</a>
           </li>
           <li>
-              <a routerLink="">Menu 2</a>
+              <a routerLink="">About</a>
           </li>
       </ul>
   </div>

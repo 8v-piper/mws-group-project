@@ -1,8 +1,16 @@
 * {
-  color: #f4f4f4;
+  background-color:transparent;
   text-decoration: none;
 }
 
+
+.logo-container {
+  margin-left: 3em;
+}
+
+.navigation-container {
+  margin-right: 3em;
+}
 .navigation-items {
   list-style: none;
 }
@@ -17,4 +25,10 @@ mat-icon {
 
 .search-bar {
   align-items: center;
+}
+
+@media only screen and (max-width: 599px) {
+    .logo-container{
+      margin-left: 0;
+    }
 }

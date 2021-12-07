@@ -9,6 +9,7 @@ import { MaterialModule } from './shared/material.module';
 import { CardComponent } from './components/card/card.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
     CardComponent,
     NavigationComponent,
     SearchBarComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,

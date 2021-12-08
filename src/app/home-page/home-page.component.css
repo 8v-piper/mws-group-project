@@ -1,7 +1,8 @@
 
 body {
   margin-top: 5em;
-  max-width: 720px ;
+  max-width: 720px;
+  display: grid;
 }
 
 .hero {
@@ -22,8 +23,8 @@ transform-origin: top;
 transform:skewX(-25deg);
 z-index: -1;
 }
-.mat-raised-button {
-  /* margin: 1rem; */
+
+.hero .mat-raised-button {
   font-size: 1.5rem;
   min-width: 10rem;
   min-height: 5rem;
@@ -44,17 +45,74 @@ z-index: -1;
   max-width: 12em;
 }
 
-.hero-image img {
-  max-width: 30em;
+mat-divider {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
-@media only screen and (min-width: 600px) and (max-width: 1000px) {
+/* Cards CSS with Grid */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax( 25em,1fr));
+  padding: 2em;
+  gap: 4em;
+  place-items: center center ;
+}
+
+.card {
+  border-radius: 1.5em 1.5em 0.5em 0.5em;
+}
+
+mat-card img {
+  display: block;
+  position: relative;
+  object-fit: contain;
+  clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+
+}
+
+.card-title {
+  margin: 1em !important;
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 3rem;
+
+}
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card-icon {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card-button {
+  padding: 0.5rem;
+  margin-bottom: 1em;
+}
+/* Card End */
+
+/* media queries */
+
+@media only screen and (min-width: 600px) and (max-width: 1280px) {
   .clip-path {
     right: 15em;
     width: 150px;
   }
 }
 
-@media only screen and (min-width :1001px) {
+@media only screen and (min-width :1281px) {
   .clip-path {
     right: 40%;
   }
@@ -67,6 +125,6 @@ z-index: -1;
   }
 }
 
-
+/* media queries end */
 
 

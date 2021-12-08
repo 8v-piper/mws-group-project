@@ -11,6 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatRippleModule} from '@angular/material/core';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {MatRippleModule} from '@angular/material/core';
     MatInputModule,
     MatAutocompleteModule,
     MatFormFieldModule,
-    MatRippleModule
+    MatRippleModule,
+    MatDividerModule
   ]
 })
 export class MaterialModule { }

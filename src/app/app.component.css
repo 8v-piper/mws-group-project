@@ -6,3 +6,9 @@ mat-sidenav {
   height: 100%;
   background-color: lightcyan;
 }
+
+mat-divider {
+  max-width: 80%;
+  color: #4b4949;
+  margin: auto;
+}

@@ -8,6 +8,7 @@ body {
 .hero {
   margin-top: 5em;
   margin-left: 5em;
+  height: 100vh;
 }
 
 
@@ -69,7 +70,7 @@ mat-card img {
   position: relative;
   object-fit: contain;
   clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
-
+  border-radius: 1.5em 1.5em 0 0;
 }
 
 .card-title {

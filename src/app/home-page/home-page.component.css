@@ -61,11 +61,15 @@ mat-divider {
   place-items: center center ;
 }
 
-.card {
+.card-holder {
   border-radius: 1.5em 1.5em 0.5em 0.5em;
 }
 
-mat-card img {
+.mat-card {
+  padding-bottom: 3em;
+}
+
+mat-card .image-container img {
   display: block;
   position: relative;
   object-fit: contain;
@@ -73,8 +77,12 @@ mat-card img {
   border-radius: 1.5em 1.5em 0 0;
 }
 
+.card-title, mat-card-content {
+  padding: 0.5em;
+}
+
 .card-title {
-  margin: 1em !important;
+  margin-top: 1em !important;
   font-size: 2.5em;
   font-weight: 600;
   line-height: 3rem;
@@ -84,12 +92,15 @@ mat-card img {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height: 4em;
+  padding: 2em;
 }
 
 .card-icon {
-  font-size: 3rem;
-  text-align: center;
-  padding: 1rem;
+  max-height: 5em;
+  max-width: 5em;
+  padding: 0;
+  margin: 0;
 }
 
 .button-container {

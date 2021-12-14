@@ -11,6 +11,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FrontEndComponent } from './components/front-end/front-end.component';
+import { BackEndComponent } from './components/back-end/back-end.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SearchBarComponent,
     HomePageComponent,
     FooterComponent,
+    FrontEndComponent,
+    BackEndComponent,
   ],
   imports: [
     BrowserModule,

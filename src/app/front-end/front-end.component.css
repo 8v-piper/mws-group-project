@@ -1,0 +1,12 @@
+mat-chip {
+  height: 3em;
+  width: 10em;
+  justify-content: center;
+}
+
+mat-chip-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

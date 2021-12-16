@@ -1,0 +1,10 @@
+<H1 class="mat-display-1">Frontend Develoment</H1>
+
+<mat-chip-list selectable multiple [formControl]="chipsControl">
+	<mat-chip class="chip" #chip="matChip" (click)="chip.toggleSelected(true)"
+    *ngFor="let option of options" [value]="option">
+		{{option.name}}
+	</mat-chip>
+</mat-chip-list>
+<br />
+<div>TestValueSelection: {{chipsValue$ | async}}</div>

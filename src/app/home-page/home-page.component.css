@@ -66,8 +66,31 @@ mat-divider {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  margin: 3em auto 3em auto ;
 }
 
+.partner-logos {
+  margin: 5em;
+  text-align: center;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.quote {
+  text-align: center;
+  font-family: Cinzel;
+  align-self: center;
+  max-width: 19em;
+}
+
+.quote span {
+  color: #e9c602;
+  font-size: 1.3em;
+}
 /* quote flex area */
 .quote-container {
   display: flex;

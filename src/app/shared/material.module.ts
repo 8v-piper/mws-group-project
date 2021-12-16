@@ -10,8 +10,9 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatRippleModule} from '@angular/material/core';
-import {MatDividerModule} from '@angular/material/divider';
+import { MatRippleModule } from '@angular/material/core';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatChipsModule } from '@angular/material/chips';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatAutocompleteModule,
     MatFormFieldModule,
     MatRippleModule,
-    MatDividerModule
+    MatDividerModule,
+    MatChipsModule
   ]
 })
 export class MaterialModule { }

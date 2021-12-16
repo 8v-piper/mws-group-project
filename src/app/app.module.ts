@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,8 +11,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { FrontEndComponent } from './components/front-end/front-end.component';
-import { BackEndComponent } from './components/back-end/back-end.component';
+import { FrontEndComponent } from './front-end/front-end.component';
+import { BackEndComponent } from './back-end/back-end.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { BackEndComponent } from './components/back-end/back-end.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

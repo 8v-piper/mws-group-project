@@ -4,6 +4,6 @@
     production: false,
     UDEMY_API_KEY: 'Basic aHlLOVZpYWZ4M2pKRzJ5bnlBMXZTbDlQQ2VobXVKemNBcHlEQTd4aTpUbWJBSzRlam1RV09ZOUlGVjFMSEtwSmVCZVBYclByRGk3a2x0SGZld1ZGZEhicWJ3YlhDNXJCUWRqcDBCeXFQNzBuMUpqWEwwQko4STI1M0hFeXc1SmRhTFFVS1BoaldSWUhFeTdEUUFCWVJBb01hOWo5a3dBNUlGaUw4WjJLdw==',
     host: 'https://www.udemy.com',
-    category: '["frontend", "backend", "devops"]',
+    category: ["frontend", "backend", "devops"],
     result_size: 3
   };

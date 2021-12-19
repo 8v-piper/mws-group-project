@@ -46,5 +46,6 @@ testem.log
 Thumbs.db
 
 # Angular Environment Variables
+.env
 environment.prod.ts
 environment.ts

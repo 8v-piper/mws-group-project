@@ -1,3 +1,8 @@
+.discription{
+  max-width: 80%;
+  margin: 2em auto 2em auto;
+}
+
 mat-chip {
   height: 3em;
   width: 10em;
@@ -10,3 +15,15 @@ mat-chip-list {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course-card {
+  max-width: 30em;
+}
+

@@ -3,3 +3,10 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto,'Cinzel', "Helvetica Neue", sans-serif; }
+
+mat-divider {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin: 3em auto 3em auto !important;
+}

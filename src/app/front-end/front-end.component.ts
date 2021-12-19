@@ -3,6 +3,10 @@ import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 export interface option {
   name: string;
+};
+
+export interface course {
+  name: string;
 }
 
 @Component({
@@ -24,6 +28,12 @@ export class FrontEndComponent implements OnInit {
     {name: 'Beginner'},
     {name: 'Intermediate'},
     {name: 'Advanced'}
+  ];
+
+  courses: course[] = [
+    { name: 'Course Name' },
+    { name: 'Course Name 2'}
+
   ];
 
   constructor() { }

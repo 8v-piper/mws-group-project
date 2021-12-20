@@ -1,5 +1,6 @@
 import { Component, OnInit, VERSION} from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Course } from '../interface/course';
 
 export interface option {
   name: string;

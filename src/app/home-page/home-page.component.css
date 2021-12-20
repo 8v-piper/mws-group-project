@@ -56,10 +56,13 @@
 
 .hero-image {
   grid-column: 8/11;
-  grid-row: 0/5;
+  grid-row: 1/5;
   max-height: 100vh;
   top: 0;
   z-index: -1;
+  background-size: contain;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 
 

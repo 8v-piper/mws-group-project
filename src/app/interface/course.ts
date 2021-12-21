@@ -6,6 +6,7 @@ export interface Course {
     _class: string
     id: number
     title: string
+    headline: string,
     url: string
     is_paid: boolean
     price: string

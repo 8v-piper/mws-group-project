@@ -4,7 +4,7 @@
     <H1 class="heading-main mat-display-3">Need Direction?</H1>
     <h3 class="heading-sub mat-display-1">Find the best curated free couses on the internet</h3>
     <h4 class="heading-sub mat-display-1">Start your journey today!</h4>
-    <button class="mat-raised-button mat-elevation-z6 " mat-button color="primary" matRipple>Get Started<mat-icon>rocket_launch</mat-icon></button>
+    <a href="#cards"><button class="mat-raised-button mat-elevation-z6 " mat-button color="primary" matRipple>Get Started<mat-icon>rocket_launch</mat-icon></button></a>
   </div>
   <div class="clip-path"></div>
   <img class="hero-image" src="assets/images/b1.svg">
@@ -67,7 +67,7 @@
 </section>
 <section class="path-container"></section>
 <mat-divider></mat-divider>
-<section class="cards">
+<section id="cards" class="cards">
   <mat-card  class="card-holder mat-elevation-z12">
     <div class="image-container">
       <img mat-card-image src="assets/images/Frontend.jpg" alt="">
@@ -84,7 +84,7 @@
       </p>
     </mat-card-content>
     <mat-card-actions class="button-container">
-      <button class="card-button mat-raised-button mat-elevation-z6" mat-button color="primary" matRipple>Find Out More</button>
+      <a [routerLink]="['/front-end']"><button class="card-button mat-elevation-z6" mat-raised-button color="primary" matRipple>Find Out More</button></a>
     </mat-card-actions>
   </mat-card>
 
@@ -104,26 +104,10 @@
       </p>
     </mat-card-content>
     <mat-card-actions class="button-container">
-      <button class="card-button mat-raised-button mat-elevation-z6" mat-button color="primary" matRipple>Find Out More</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <mat-card  class="card-holder mat-elevation-z12">
-    <div class="image-container">
-      <img mat-card-image src="assets/images/devops.jpg" alt="">
-    </div>
-    <mat-card-title class="card-title">Dev-ops</mat-card-title>
-    <div class="icon-container">
-      <mat-icon class="card-icon">html</mat-icon><mat-icon class="card-icon">css</mat-icon><mat-icon class="card-icon">javascript</mat-icon>
-    </div>
-    <mat-card-content>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam voluptate amet ipsum excepturi. Amet officiis cupiditate delectus magnam facilis dolorem! Eligendi quia amet sunt dignissimos facere tempora optio praesentium ullam.
-      </p>
-    </mat-card-content>
-    <mat-card-actions class="button-container">
-      <button class="card-button mat-raised-button mat-elevation-z6" mat-button color="primary" matRipple>Find Out More</button>
+      <a [routerLink]="['/back-end']"><button class="card-button mat-elevation-z6" mat-raised-button color="primary" matRipple>Find Out More</button></a>
     </mat-card-actions>
   </mat-card>
 </section>
+<mat-divider></mat-divider>
+<app-about-page></app-about-page>
 <app-footer></app-footer>

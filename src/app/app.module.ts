@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +14,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FrontEndComponent } from './front-end/front-end.component';
 import { BackEndComponent } from './back-end/back-end.component';
-import { HttpClientModule } from '@angular/common/http';
+import { CoursesService } from './courses.service';
+import { AboutPageComponent } from './about-page/about-page.component';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     FrontEndComponent,
     BackEndComponent,
+    AboutPageComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -32,10 +37,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule, 
-    HttpClientModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ CoursesService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

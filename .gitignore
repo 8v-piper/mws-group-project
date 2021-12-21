@@ -45,7 +45,7 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# Angular Environment Variables
-# .env
-# environment.prod.ts
-# environment.ts
+Angular Environment Variables
+.env
+environment.prod.ts
+environment.ts

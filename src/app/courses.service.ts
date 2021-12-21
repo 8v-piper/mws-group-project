@@ -18,8 +18,8 @@ export class CoursesService {
   constructor(private http:HttpClient) { }
 
   getCourses(category: String): Observable<Course[]> {
-    
-    
+
+
     const courses = this.http.get<Course[]>(`${this.host}/api-2.0/courses/?page=10&page_size=${this.result_size}&search=${category}&language=en`,{
       headers: new HttpHeaders({
         "Accept": "application/json, text/plain, */*",
@@ -31,7 +31,7 @@ export class CoursesService {
   }
 
   getCourse(id: String): Observable<Course> {
-    
+
     let url = `${this.host}/api-2.0/courses/${id}`;
 
     return this.http.get<Course>(url, {

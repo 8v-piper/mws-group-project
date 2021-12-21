@@ -1,14 +1,13 @@
 import { Component, OnInit, VERSION} from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CoursesService } from '../courses.service';
 import { Course } from '../interface/course';
+import { environment } from 'src/environments/environment';
 
 export interface option {
   name: string;
 };
 
-export interface course {
-  name: string;
-}
 
 @Component({
   selector: 'app-front-end',
@@ -31,17 +30,30 @@ export class FrontEndComponent implements OnInit {
     {name: 'Advanced'}
   ];
 
-  courses: course[] = [
-    { name: 'Course Name' },
-    { name: 'Course Name 2'}
+  category = environment.category;
+  courses: Course[] = [ ];
 
-  ];
+  constructor(private coursesService: CoursesService) {
 
-  constructor() { }
-
+  }
 
   ngOnInit(): void {
+    this.coursesService.getCourses(this.category[0]).subscribe(response => {
+      this.courses = response;
+      console.log(this.courses)
+    })
+    this.coursesService.getCourses(this.category[1]).subscribe(response => {
+      this.courses = response;
+      console.log(this.courses)
+    })
+    this.coursesService.getCourses(this.category[2]).subscribe(response => {
+      this.courses = response;
+      console.log(this.courses)
+    })
   }
+
+
+
 
   chipsControl = new FormControl('');
   chipsValue$ = this.chipsControl.valueChanges;

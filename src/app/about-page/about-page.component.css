@@ -1,0 +1,29 @@
+
+
+.heading {
+  margin-left: 2em;
+  font-size: 3em;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  margin-left: 5em;
+  font-size: 1.2em;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  margin: 1em 5em;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+

@@ -13,6 +13,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRippleModule } from '@angular/material/core';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatIconRegistry } from "@angular/material/icon";
+import { DomSanitizer } from "@angular/platform-browser"
 
 
 @NgModule({
@@ -32,7 +35,19 @@ import { MatChipsModule } from '@angular/material/chips';
     MatFormFieldModule,
     MatRippleModule,
     MatDividerModule,
-    MatChipsModule
+    MatChipsModule,
+    MatBadgeModule,
   ]
 })
-export class MaterialModule { }
+export class MaterialModule {
+  constructor(
+    private matIconRegistry: MatIconRegistry,
+    private domSanitizer: DomSanitizer
+    ){
+    // ...
+    this.matIconRegistry.addSvgIcon(
+      'twitter',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/images/twitter.svg")
+    )
+  }
+}

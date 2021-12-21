@@ -20,15 +20,17 @@
 <mat-divider></mat-divider>
 <h1 class="mat-display-1">Most Popular Courses</h1>
 <div class="card-container">
-<app-card class="course-card" *ngFor="let course of courses">
-  <mat-card-title class= "heading">{{course.name}}</mat-card-title>
+<app-card class="course-card" *ngFor=" let course of courses">
+  <mat-card-title class= "heading">{{ course.title }}</mat-card-title>
+  <mat-card-subtitle>{{ course.headline }}</mat-card-subtitle>
+  <img mat-card-md-image src="{{ course.image_240x135 }}">
 </app-card>
 </div>
 <mat-divider></mat-divider>
 <h1 class="mat-display-1">Top Rated Courses</h1>
 <div class="card-container">
-<app-card class="course-card" *ngFor="let course of courses">
-  <mat-card-title class= "heading">{{course.name}}</mat-card-title>
+<app-card class="course-card" >
+  <mat-card-title class= "heading"></mat-card-title>
 </app-card>
 </div>
 <mat-divider></mat-divider>

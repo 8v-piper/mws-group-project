@@ -1,8 +1,9 @@
 import { Component, OnInit, VERSION} from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CoursesService } from '../courses.service';
-import { Course } from '../interface/course';
 import { environment } from 'src/environments/environment';
+import { Observable } from 'rxjs';
+import { Result } from '../interface/result';
 
 export interface option {
   name: string;
@@ -31,24 +32,16 @@ export class FrontEndComponent implements OnInit {
   ];
 
   category = environment.category;
-  courses: Course[] = [ ];
+  data: any;
 
   constructor(private coursesService: CoursesService) {
 
   }
 
   ngOnInit(): void {
-    this.coursesService.getCourses(this.category[0]).subscribe(response => {
-      this.courses = response;
-      console.log(this.courses)
-    })
-    this.coursesService.getCourses(this.category[1]).subscribe(response => {
-      this.courses = response;
-      console.log(this.courses)
-    })
-    this.coursesService.getCourses(this.category[2]).subscribe(response => {
-      this.courses = response;
-      console.log(this.courses)
+    this.data = this.coursesService.getCourses(this.category[0]).subscribe(data => {
+      this.data = data.results;
+      console.log(this.data)
     })
   }
 

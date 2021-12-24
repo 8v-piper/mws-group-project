@@ -16,18 +16,18 @@ export class HomePageComponent implements OnInit {
   constructor(private coursesService:CoursesService) {}
 
   ngOnInit(): void {
-    this.coursesService.getCourses(this.category[0]).subscribe(response => {
-      this.courses = response;
-      console.log(this.courses)
-    })
-    this.coursesService.getCourses(this.category[1]).subscribe(response => {
-      this.courses = response;
-      console.log(this.courses)
-    })
-    this.coursesService.getCourses(this.category[2]).subscribe(response => {
-      this.courses = response;
-      console.log(this.courses)
-    })
+    // this.coursesService.getCourses(this.category[0]).subscribe(response => {
+    //   this.courses = response;
+    //   console.log(this.courses)
+    // })
+    // this.coursesService.getCourses(this.category[1]).subscribe(response => {
+    //   this.courses = response;
+    //   console.log(this.courses)
+    // })
+    // this.coursesService.getCourses(this.category[2]).subscribe(response => {
+    //   this.courses = response;
+    //   console.log(this.courses)
+    // })
   }
 
 }

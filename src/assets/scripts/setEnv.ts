@@ -53,7 +53,7 @@ const environmentFileContent = `
     UDEMY_API_KEY: '${process.env.UDEMY_API_KEY}',
     host: 'https://www.udemy.com',
     category: ["frontend", "backend", "devops"],
-    result_size: 3
+    result_size: 10
   };
 `;
 

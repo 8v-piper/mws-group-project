@@ -47,7 +47,15 @@ export class MaterialModule {
     // ...
     this.matIconRegistry.addSvgIcon(
       'twitter',
-      this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/images/twitter.svg")
-    )
+      this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/logos/twitter.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      'linkedin',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/logos/linkedin.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      'web',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/logos/web.svg")
+    );
   }
 }

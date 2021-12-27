@@ -1,6 +1,12 @@
-* {
-  height: 100vh;
+html {
+  scroll-behavior: smooth;
 }
+
+* {
+  margin: 0 10px;
+
+}
+
 mat-sidenav {
   width: 60%;
   height: 100%;
@@ -12,3 +18,11 @@ mat-divider {
   color: #4b4949;
   margin: auto;
 }
+
+
+/* @media only screen and (min-width :1281px) {
+  * {
+    height: 100vh;
+    margin: 0 2.5em;
+  }
+} */

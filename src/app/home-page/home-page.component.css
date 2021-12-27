@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   margin-top: 5em;
   margin-left: 5em;
-  min-height: 100vh;
+  height: 100vh;
   overflow-x: hidden;
   align-items: flex-start;
 }
@@ -19,7 +19,7 @@
   right: 20%;
   top: 0;
   width: 200px;
-  height: 100%;
+  height: 100vh;
   background: #673ab7;
   transform-origin: top;
   transform:skewX(-25deg);
@@ -54,6 +54,10 @@
   max-width: 70em;
 }
 
+.hero > mat-divider {
+  margin-top: 0;
+  padding-top: 0;
+}
 
 .partner-logos {
   margin: 5em;
@@ -77,6 +81,7 @@
   color: #e9c602;
   font-size: 1.3em;
 }
+
 /* quote flex area */
 .quote-container {
   display: flex;
@@ -161,18 +166,27 @@ mat-card .image-container img {
     right: 15em;
     width: 150px;
   }
+
+  .hero-image {
+    display: none;
+  }
 }
 
 @media only screen and (min-width :1281px) {
   .clip-path {
     right: 40%;
   }
+
 }
 
 @media only screen and (max-width: 599px) {
   .clip-path {
     right: -11em;
     width: 150px
+  }
+
+  .hero-image {
+    display: none;
   }
 }
 

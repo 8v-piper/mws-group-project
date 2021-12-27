@@ -9,12 +9,17 @@
 p {
   margin-left: 5em;
   font-size: 1.2em;
+  max-width: 50%;
 }
 
-.image-container {
+.social-links {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  place-content: center space-around;
+  align-items: center;
 }
+
 
 img {
   margin: 1em 5em;
@@ -27,3 +32,13 @@ a {
   text-decoration: none;
 }
 
+.container {
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 599px) {
+  .image-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -10,6 +10,8 @@ export class CardComponent implements OnInit {
   @Input()
   course: any;
 
+  baseUrl = 'https://www.udemy.com'
+
   constructor() { }
 
   ngOnInit(): void {

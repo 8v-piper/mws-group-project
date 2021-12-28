@@ -12,13 +12,13 @@ export class CoursesService {
 
   api_key = environment.UDEMY_API_KEY;
   host = environment.host;
-  category = environment.category;
+  category = environment.category[0];
   result_size = environment.result_size;
 
   constructor(private http:HttpClient) { }
 
   getCourses(category: String): Observable<Data> {
-    return this.http.get<Data>(`${this.host}/api-2.0/courses/?page=10&page_size=${this.result_size}&search=${category}&language=en`,{
+    return this.http.get<Data>(`${this.host}/api-2.0/courses/?page=1&page_size=${this.result_size}&search=${this.category}&language=en`,{
       headers: new HttpHeaders({
         "Accept": "application/json, text/plain, */*",
         "Authorization": this.api_key,

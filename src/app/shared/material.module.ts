@@ -15,7 +15,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatIconRegistry } from "@angular/material/icon";
-import { DomSanitizer } from "@angular/platform-browser"
+import { DomSanitizer } from "@angular/platform-browser";
 
 
 @NgModule({
@@ -56,6 +56,46 @@ export class MaterialModule {
     this.matIconRegistry.addSvgIcon(
       'web',
       this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/logos/web.svg")
+    );
+
+    this.matIconRegistry.addSvgIcon(
+      'khan',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/logos/khan.svg")
+    );
+
+    this.matIconRegistry.addSvgIcon(
+      'coursera',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/logos/coursera.svg")
+    );
+
+    this.matIconRegistry.addSvgIcon(
+      'udacity',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/logos/udacity.svg")
+    );
+
+    this.matIconRegistry.addSvgIcon(
+      'freecode',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/logos/freecodecamp.svg")
+    );
+
+    this.matIconRegistry.addSvgIcon(
+      'udemy',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/logos/udemy.svg")
+    );
+
+    this.matIconRegistry.addSvgIcon(
+      'scrimba',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/logos/scrimba.svg")
+    );
+
+    this.matIconRegistry.addSvgIcon(
+      'gwgoogle',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/logos/gwgoogle.svg")
+    );
+
+    this.matIconRegistry.addSvgIcon(
+      'edx',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/logos/edx.svg")
     );
   }
 }

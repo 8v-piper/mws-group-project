@@ -1,6 +1,6 @@
 <mat-card class="course-card mat-elevation-z12">
 
-  <img mat-card-image [src]="course.image_480x270" alt="Photo of a Shiba Inu">
+  <img mat-card-image [src]="course.image_480x270" alt="Course Header Image">
   <mat-card-header>
     <div mat-card-avatar class="course-header-logo-image"><img [src]="course.image_125_H" alt=""></div>
     <mat-card-title class= "heading">{{course.title}}</mat-card-title>
@@ -11,8 +11,8 @@
       {{course.headline}}
     </p>
   </mat-card-content>
-  <mat-card-actions>
-    <a mat-raised-button color="primary" [href]="baseUrl+course.url" target="_blank">JOIN</a>
-    <button mat-stroked-button color="accent">SHARE</button>
+  <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
+    <a [href]="baseUrl+course.url" target="_blank"><button mat-raised-button color="primary" >JOIN</button></a>
+    <!-- <button mat-stroked-button color="accent">SHARE</button> -->
   </mat-card-actions>
 </mat-card>

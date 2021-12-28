@@ -52,7 +52,7 @@ const environmentFileContent = `
     production: ${isProduction},
     UDEMY_API_KEY: '${process.env.UDEMY_API_KEY}',
     host: 'https://www.udemy.com',
-    category: ["frontend", "backend", "devops"],
+    category: ["Frontend", "Backend", "Angular", "React", "Vue", "HTML", "CSS", "SASS", "Free"],
     result_size: 10
   };
 `;

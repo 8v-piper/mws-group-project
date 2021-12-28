@@ -1,31 +1,34 @@
-<H1 class="mat-display-3">Frontend Develoment</H1>
+<div class="container">
+  <H1 class="mat-display-3">Frontend Develoment</H1>
 
-<h3 class="mat-display-1">Start your path towards a future in web development and design</h3>
-<mat-card class="discription mat-body-2">
-  You use the internet everyday.<br>
-  But have you ever wondered how these websites actually work? How are they built?<br>
-  What skills are necessary to build a website?<br>
-  Find the answers to these questions and start your first steps toward a career building the internet everyone uses.
-</mat-card>
+  <h3 class="mat-display-1">Start your path towards a future in web development and design</h3>
+  <mat-card class="discription mat-body-2">
+    You use the internet everyday.<br>
+    But have you ever wondered how these websites actually work? How are they built?<br>
+    What skills are necessary to build a website?<br>
+    Find the answers to these questions and start your first steps toward a career building the internet everyone uses.
+  </mat-card>
   <mat-divider></mat-divider>
-<h3 class="mat-display-1">Popular Topics</h3>
-<mat-chip-list selectable multiple [formControl]="chipsControl">
-	<mat-chip class="chip" #chip="matChip" (click)="chip.toggleSelected(true)"
-    *ngFor="let option of options" [value]="option">
-		{{option.name}}
-	</mat-chip>
-</mat-chip-list>
-<br />
-<div>TestValueSelection: {{chipsValue$ | async}}</div>
-<mat-divider></mat-divider>
-<h1 class="mat-display-1">Most Popular Courses</h1>
-<div class="card-container" >
-  <app-card class="course-card" *ngFor="let course of data" [course]="course"></app-card>
+  <h3 class="mat-display-1">Popular Topics</h3>
+  <mat-chip-list selectable multiple [formControl]="chipsControl">
+    <mat-chip class="chip" #chip="matChip" (click)="chip.toggleSelected(true)" *ngFor="let option of options"
+      [value]="option.name">
+      {{option.name}}
+    </mat-chip>
+  </mat-chip-list>
+  <br />
+  <div>TestValueSelection: {{chipsValue$ | async}}</div>
+  <mat-divider></mat-divider>
+  <h1 class="mat-display-1">Most Popular Courses</h1>
+  <div class="card-container">
+    <app-card class="course-card" *ngFor="let course of data" [course]="course"></app-card>
+  </div>
+  <mat-divider></mat-divider>
+  <h1 class="mat-display-1">Top Rated Courses</h1>
+  <div class="card-container">
+    <app-card class="course-card" *ngFor="let course of data" [course]="course">
+    </app-card>
+  </div>
+  <mat-divider></mat-divider>
+
 </div>
-<mat-divider></mat-divider>
-<h1 class="mat-display-1">Top Rated Courses</h1>
-<div class="card-container">
-<app-card class="course-card" *ngFor="let course of data" [course]="course">
-</app-card>
-</div>
-<mat-divider></mat-divider>
